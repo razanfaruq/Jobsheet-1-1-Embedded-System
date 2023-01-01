@@ -41,6 +41,16 @@ B. ESP-NOW One-Way Point-to-Point Communication
 receiver.
 6. Upload program, kemudian dokumentasikan hasilnya.
 
+MAC Address Tx (Nabila & Hesti) : 24:0A:C4:C6:06:54
+
+![Picture8](https://user-images.githubusercontent.com/118172386/210176305-8f790ff1-7dd2-4f63-bcfa-d673b95680ab.png)
+![Picture9](https://user-images.githubusercontent.com/118172386/210176309-b6fae9ed-bcb2-4762-9fbb-d9f0056ccc82.png)
+
+MAC Address Rx (Razan & Cantika) : 30:AE:A4:7A:8F:B8
+
+![Picture10](https://user-images.githubusercontent.com/118172386/210176316-3b47f081-b8a4-41bd-84f5-b8079e974d17.png)
+![Picture11](https://user-images.githubusercontent.com/118172386/210176321-fe7b1bb8-c8eb-4944-ab7b-6855e30e0d43.png)
+
 
 7. Buatlah analisis atau flow chart program untuk menjelaskan fungsi per-bagian pada program.
 8. Buatlah data dummy dengan ukuran yang terbaca oleh receiver ± 250 byte.
