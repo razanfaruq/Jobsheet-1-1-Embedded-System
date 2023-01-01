@@ -40,11 +40,14 @@ B. ESP-NOW One-Way Point-to-Point Communication
 5. Setelah ESP32 sender dikonfigurasi, kemudian konfigurasikan ESP32 yang lain sebagai Receiver. Ketikkan script program berikut untuk mengkonfigurasi ESP32 sebagai
 receiver.
 6. Upload program, kemudian dokumentasikan hasilnya.
+
+
 7. Buatlah analisis atau flow chart program untuk menjelaskan fungsi per-bagian pada program.
 8. Buatlah data dummy dengan ukuran yang terbaca oleh receiver ± 250 byte.
 9. Aturlah jarak awal komunikasi antara sender dan receiver yaitu 1 meter. Kemudian ubah jarak komunikasi dengan penambahan 1 meter. Data yang dikirim pada tiap iterasi pengujian adalah 10 data.
 10. Aturlah tinggi antena atau peletakan ESP32 pada ground level (menempel tanah), 30 cm di atas tanah, dan 1 meter di atas tanah.
 11. Masukkan hasil pengukuran pada kolom berikut dan buatlah analisisnya dengan pendekatan teori freshnel zone.
+![Capture1](https://user-images.githubusercontent.com/118172386/210174231-27c63ef7-d7b7-4f6f-9393-3fae47a03d06.JPG)
 
 C. One-Way, One-to-Many Communication
 
@@ -57,7 +60,25 @@ a) Mengirim Pesan yang Sama Ke Beberapa Board ESP32
 6. Siapkan board Receiver, kemudian ketik script berikut ini pada Arduino IDE.
 7. Upload program tersebut pada Receiver.
 8. Dokumentasikan output dari program tersebut secara lengkap pada masing-masing board.
+
+MAC Address yang digunakan :
+
+MAC Sender (Syauqi & Vania) : 3C:71:BF:F1:4B:08
+
+MAC Reciver 1 (Noviantie & Dionysius) : 24:6F:28:02:C3:1C
+
+MAC Receiver 2 (Hesti & Nabila) : 24:0A:C4:C6:06:54
+
+MAC Receiver 3 (Cantika & Razan) : 30:AE:A4:7A:8F:B8
+
+Pada Receiver 3, Hasilnya adalah sebagai berikut
+![Picture6](https://user-images.githubusercontent.com/118172386/210175529-3e0865a4-bc50-463b-b6a0-61fedb48f0f6.png)
+
 9. Matikan salah satu board Receiver, dokumentasikasikan hasilnya, dan buatlah analisisnya.
+
+Pada Receiver 3, Hasilnya adalah sebagai berikut
+![Picture7](https://user-images.githubusercontent.com/118172386/210175544-5621ba44-1a00-4639-8de3-751b6af1940e.png)
+
 10. Buatlah koneksi menggunakan semua board ESP32 yang ada dikelas, dengan menambahkan Receiver ke dalam jaringan secara bertahap,
 11. Dokumentasikan hasilnya secara lengkap. Catat dan analisis jumlah board maksimal yang dapat membentuk jaringan
 
@@ -75,10 +96,28 @@ Di dalam mode ini, Receiver harus dapat mengidentifikasi setiap MAC Address unik
 sedikit trik. Sehingga, untuk membuatnya lebih mudah, masing-masing Sender akan diberikan ID unik, agar Receiver dapat lebih mudah mengidentifikasi Sender.
 1. Siapkan 4 board ESP32. 3 board diatur sebagai Sender dan 1 board diatur sebagai Receiver.
 2. Unggah program untuk menemukan MAC Address pada board Receiver, kemudian catat MAC Address-nya.
+
+MAC Address ESP32 yang digunakan :
+
+MAC Sender 1 (Syauqi & Vania) : 24:0A:C4:C5:E2:DC
+
+MAC Sender 2 (Hesti & Nabila) : 24:0A:C4:C6:06:54
+
+MAC Sender 3 (Cantika & Razan) : 24:0A:C4:C6:0E:7C
+
+MAC Receiver  (Dionysius & Noviantie) : 3C:71:BF:F1:42:70
+
 3. Ketikkan program berikut pada Arduino IDE untuk mengkonfigurasi board Sender
 4. Upload program tersebut pada board Sender.
 5. Siapkan board Receiver, ketikkan script berikut di Arduino IDE, kemudian upload program tersebut.
 6. Buka serial monitor dan dokumentasikan output program.
+
+Dari Pihak Sender akan muncul seperti dibawah
+![Picture4](https://user-images.githubusercontent.com/118172386/210175087-c52e10d8-9700-4b07-861d-dec8f5ce6d2d.png)
+
+
+Dari Pihak Receiver akan muncul seperti dibawah
+![Picture5](https://user-images.githubusercontent.com/118172386/210175089-02992e20-cc69-4b7e-8910-5d10559d9cf1.png)
 
 E. Two-Way Communication
 1. Siapkan 2 unit ESP32 dan 2 unit sensor DHT11.
