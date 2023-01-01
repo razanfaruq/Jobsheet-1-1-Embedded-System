@@ -1,10 +1,31 @@
 # Jobsheet-1-1-Embedded-System
 ### JARINGAN SENSOR NIRKABEL MENGGUNAKAN ESP-NOW
 
-#### A. Teori Dasar
+#### I. Teori Dasar
+ESP-NOW adalah protokol yang dikembangkan oleh Espressif, yang memungkinkan banyak perangkat untuk berkomunikasi satu sama lain tanpa menggunakan Wi-Fi. Protokol ini mirip dengan konektivitas nirkabel 2.4GHz berdaya rendah. Pendifinisian alamat (MAC Address) pada masing-masing ESP32 diperlukan pada awal konfigurasi. Setelah konfigurasi alamat selesai dilakukan, jaringan peer-to-peer akan terbentuk dan perangkat tidak perlu melakukan handshaking kembali ketika akan berkomunikasi. Hal ini memunjukkan bahwa setelah perangkat ESP32 saling terpasang satu sama lain, koneksi akan tetap ada. Dengan kata lain, jika tiba-tiba salah satu ESP32 kehilangan daya atau diatur ulang, ketika restart, secara otomatis akan terhubung ke pasangan ESP32 yang telah terdefinisi alamatnya untuk melanjutkan komunikasi.
 
-#### B. Alat dan Bahan
+ESP-NOW mempunyai fitur sebagai berikut.
+1. Komunikasi unicast yang terenkripsi maupun tidak terenkripsi.
+2. Perpaduan komunikasi data yang terenkripsi maupun yang tidak terenkripsi pada perangkat yang berada pada topologi peer-to-peer.
+3. Payload (ukuran) data yang dapat dikirm mencapai 250 byte.
+4. Terdapat fungsi callback yang dapat menginformasikan data berhasil terkirim maupun gagal dikirim. 
 
-#### C. Langkah Percobaan
+Selain itu, ESP-NOW mempunyai batasan sebagai berikut.
+1. Jumlah maksimal perangkat yang dapat berkomunikasi dalam mode station dengan data terenkripsi adalah 10 unit (6 dalam mode SoftAP atau SoftAP+Station).
+2. Untuk komunikasi tidak terenkripsi, jumlah maksimal perangkat adalah 20 unit, termasuk dengan yang terenkripsi. 
 
-#### D. Analisa dan Kesimpulan
+ESP-NOW mempunyai 2 tipe jaringan, yaitu One-Way Communication dan Two-Way Communication. One-Way Communication terbagi menjadi Point-to-Point, One-to-Many Communication dan Many-to-One Communication. Sementara Two-Way Communication terbagi menjadi Point-to-Point dan Mesh Communication
+
+#### II. Alat dan Bahan yang Digunakan
+1) ESP32
+2) Breadboard
+3) Kabel jumper
+4) Resistor 10K Ohm
+
+#### III. Percobaan
+A. Memperoleh MAC Address ESP32 Receiver
+B. ESP-NOW One-Way Point-to-Point Communication
+C. One-Way, One-to-Many Communication 
+D. One-Way, Many-to-One Communication 
+E. Two-Way Communication
+
